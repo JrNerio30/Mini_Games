@@ -1,0 +1,27 @@
+@import url(../ChillaxFont/css/chillax.css);
+
+//  MIXINS
+@mixin display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+
+// Variables
+$black-background-color: #10100e;
+$main-color: #fff1b5;
+$chillax-variable: 'Chillax-Variable'; 
+$chillax-bold: 700;
+$chillax-semibold: 600;
+$chillax-medium: 500;
+
+// GLOBAL
+*{
+  margin: 0;
+  padding: 0; 
+ }
+
+body{
+  background-color: $black-background-color;
+}
