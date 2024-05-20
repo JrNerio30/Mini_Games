@@ -1,14 +1,10 @@
 {
-  "name": "rock-paper-scissors",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "mini-games",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "watch:sass": "sass --watch sass/global.scss:style/global.css sass/main.scss:style/main.css sass/rock_paper_scissors.scss:style/rock_paper_scissors.css"
   },
   "devDependencies": {
-    "vite": "^5.2.0"
+    "sass": "^1.32.0"
   }
 }
