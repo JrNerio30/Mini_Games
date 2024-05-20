@@ -1,0 +1,55 @@
+@use 'global';
+
+.header{
+  // position: absolute;
+  width: 100%;
+  min-height: 40vh;
+  background-color: global.$main-color; 
+  @include global.display-center();
+  border-radius: 0px 0px 100% 100%;
+  .header__title{
+    font-family: global.$chillax-variable;
+    font-weight: global.$chillax-bold;
+    font-size: clamp(2rem, 4vw, 6vw);
+    margin: 1rem;
+    text-align: center;
+  }
+}
+
+.main{
+  min-height: 100vh;
+  padding-top: 10rem;
+  background-color: global.$black-background-color;
+  .main__container{
+    @include global.display-center();
+    .main__list{
+      list-style: none;
+      .main__button--rps{
+        text-decoration: none;
+      }
+      .main--rps{
+        overflow: hidden;
+        text-align: center;
+        width: clamp(10rem, 80vw, 80vw);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0.3rem global.$main-color solid;
+        border-inline: none;
+        background-color: transparent;
+        padding: 1.5rem 2rem;
+        cursor: pointer;
+        color: global.$main-color;
+        font-family: global.$chillax-variable;
+        font-weight: global.$chillax-medium;
+        font-size: clamp(1rem, 2vw, 4vw);
+        .main__arrow{
+          background-color: global.$main-color;
+          color: global.$black-background-color;
+          border-radius: 50%;
+          padding-inline: 1rem;
+        }
+      }
+    }
+  }
+}
