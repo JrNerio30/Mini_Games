@@ -1,0 +1,68 @@
+@import url(../ChillaxFont/css/chillax.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #10100e;
+}
+
+.header {
+  width: 100%;
+  min-height: 40vh;
+  background-color: #fff1b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 100% 100%;
+}
+.header .header__title {
+  font-family: "Chillax-Variable";
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 6vw);
+  margin: 1rem;
+  text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 10rem;
+  background-color: #10100e;
+}
+.main .main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__container .main__list {
+  list-style: none;
+}
+.main .main__container .main__list .main__button--rps {
+  text-decoration: none;
+}
+.main .main__container .main__list .main--rps {
+  overflow: hidden;
+  text-align: center;
+  width: clamp(10rem, 80vw, 80vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.3rem #fff1b5 solid;
+  border-inline: none;
+  background-color: transparent;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  color: #fff1b5;
+  font-family: "Chillax-Variable";
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 4vw);
+}
+.main .main__container .main__list .main--rps .main__arrow {
+  background-color: #fff1b5;
+  color: #10100e;
+  border-radius: 50%;
+  padding-inline: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
