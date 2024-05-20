@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/main.css">
     <title>Rock Paper Scissors</title>
   </head>
   <body>
+    <header class="header">
+      <h1 class="header__title">Mini Games</h1>
+    </header>
     <main class="main">
-      <h1 class="main__title">Rock Paper Scissors</h1>
-      <div class="main__result__container">
-        <p class="main__result" id="result">Choose your Weapon Below</p>
-      </div>
-      <ul class="main__game__container">
-        <li class="main__game__list"><button id="rock" class="main__buttons"><i class="fa-solid fa-hand-back-fist"></i></button></li>
-        <li class="main__game__list"><button id="paper" class="main__buttons"><i class="fa-solid fa-hand"></i></button></li>
-        <li class="main__game__list"><button id="scissors" class="main__buttons"><i class="fa-solid fa-hand-scissors"></i></button></li>
+      <ul class="main__container">
+        <li class="main__list">
+          <a class="main__button--rps" href="./pages/rock_paper_scissors.html"><button class="main--rps">Rock Paper Scrissors <span class="main__arrow">🡵</span></button></a>
+        </li>
       </ul>
     </main>
 
