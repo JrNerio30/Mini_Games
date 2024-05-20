@@ -23,15 +23,15 @@ function getComputerChoice() {
 
 function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice){
-    return `It's a tie!`
+    return `IT'S A TIE!`
   }else if(
     (userChoice === 'rock' && computerChoice === 'scissors') ||
     (userChoice === 'paper' && computerChoice === 'rock') ||
     (userChoice === 'scissors' && computerChoice === 'paper')
   ) {
-    return 'You Win';
+    return 'WOW! YOU WIN';
   }else{
-    return 'You Lose'
+    return 'HAHA, YOU LOSE'
   }
 }
 
