@@ -1,26 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/global.css">
-    <link rel="stylesheet" href="./style/main.css">
-    <title>Rock Paper Scissors</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="header__title">Mini Games</h1>
-    </header>
-    <main class="main">
-      <ul class="main__container">
-        <li class="main__list">
-          <a class="main__button--rps" href="./pages/rock_paper_scissors.html"><button class="main--rps">Rock Paper Scrissors <span class="main__arrow">🡵</span></button></a>
-        </li>
-      </ul>
-    </main>
 
-    <script type="module" src="./src/main.js" async></script>
-    <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Mini Games</h1>
+  </header>
+  <main class="main">
+    <ul class="main__container">
+      <li class="main__list">
+        <a class="main__button--rps" href="./pages/rock_paper_scissors.html">
+          <button id="rps" class="main--rps">
+            Rock Paper Scrissors <span class="main__arrow">🡵</span>
+            <img class="rps__img" src="./assets/rps.png" alt="rock paper scissors game beige and black colors">
+          </button>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <script src="./src/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
