@@ -49,6 +49,22 @@
           border-radius: 50%;
           padding-inline: 1rem;
         }
+        .rps__img{
+          display: none;
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          translate: -50% -50%;
+          width:25rem;
+          height: auto;
+          z-index: 2;
+          border: 0.2rem global.$main-color solid;
+          border-radius: 1rem;
+          transition: all 0.3s;
+          &.active{
+            display: block;
+          }
+        }
       }
     }
   }
