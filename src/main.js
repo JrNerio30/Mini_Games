@@ -1,48 +1,27 @@
-// VARIABLES
-const rockButton = document.getElementById("rock");
-const paperButton = document.getElementById("paper");
-const scissorsButton = document.getElementById("scissors");
-const results = document.getElementById("result");
+const rpsHover = document.getElementById("rps");
 
-// Event Listeners for the buttons
-rockButton.addEventListener("click", () => handleButtonClick("rock"));
-paperButton.addEventListener("click", () => handleButtonClick("paper"));
-scissorsButton.addEventListener("click", () => handleButtonClick("scissors"));
+rpsHover.addEventListener("mouseover", () => hoverShowImage());
+rpsHover.addEventListener("mouseout", () => hoverHideImage())
 
-function handleButtonClick(userChoice) {
-  const computerChoice = getComputerChoice();
-  const result = determineWinner(userChoice, computerChoice);
-  results.textContent = `You Chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
-}
+function hoverShowImage() {
+  const rpsImage = document.querySelector(".rps__img");
+  rpsImage.classList.add("active");
 
-function getComputerChoice() {
-  const choices = ['rock', 'paper', 'scissors'];
-  const randomIndex = Math.floor(Math.random() * choices.length)
-  return choices[randomIndex];
-}
+  document.addEventListener("mousemove", onMouseMove);
 
-function determineWinner(userChoice, computerChoice) {
-  if (userChoice === computerChoice){
-    return `IT'S A TIE!`
-  }else if(
-    (userChoice === 'rock' && computerChoice === 'scissors') ||
-    (userChoice === 'paper' && computerChoice === 'rock') ||
-    (userChoice === 'scissors' && computerChoice === 'paper')
-  ) {
-    return 'WOW! YOU WIN';
-  }else{
-    return 'HAHA, YOU LOSE'
+  function onMouseMove(e) {
+    requestAnimationFrame(() => {
+      rpsImage.style.left = `${e.clientX}px`;
+      rpsImage.style.top = `${e.clientY}px`;
+    });
   }
+
+  hoverShowImage.onMouseMove = onMouseMove;
 }
 
+function hoverHideImage() {
+  const rpsImage = document.querySelector(".rps__img");
+  rpsImage.classList.remove("active");
 
-
-
-
-
-
-
-
-
-
-
+  document.removeEventListener("mousemove", hoverShowImage.onMouseMove);
+}
